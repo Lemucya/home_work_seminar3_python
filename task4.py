@@ -29,3 +29,25 @@ try:
     print(f"x ** y =  {raising_to_power(basis, degree)}")
 except ValueError as e:
     print(e)
+
+"""
+вариант преподавателя:
+
+try:
+    if y < 0:
+        res = 1
+        for i in range(y, 0):
+            res = res * x
+        res = 1 / res
+        return f'Для значений х = {5}, у = {-3} результат: {res}'
+        
+    else:
+        return "Число у должно быть строго отрицательным"
+        
+    except TypeError:
+        return "Пожалуйста, вводите только числа"
+    except ZeroDivisionError:
+        return "На ноль делить нельзя"
+        
+print(get_val(5, -3))
+"""

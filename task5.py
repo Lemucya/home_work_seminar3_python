@@ -38,3 +38,23 @@ while True:
         print(f"Сумма значений элементов {numbers_sum}")
     if numbers_sting.count('#') > 0:
         break
+
+"""
+вариант преподавателя:
+
+def get_sum(my_sum=0):
+    # 1 2 3 - ['1', ...]
+    lst = input("Введите числа через пробел: ").split()
+    for el in lst:
+        if el != "q":
+            my_sum = my_sum + int(el)
+        else:
+            break
+        print(my_sum)
+        if "q" in lst:
+            exit("Выход из программы")
+        else:
+            get_sum(my_sum)
+            
+get_sum()
+"""
